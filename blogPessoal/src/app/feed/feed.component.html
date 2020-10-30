@@ -2,11 +2,11 @@
 
     <div class="row">
 
-<div class="col-md-4">
+ <div class="col-md-4">
     <app-perfil-lateral></app-perfil-lateral>
-</div>
+ </div>
 
-<div class="col-md-8">
+ <div class="col-md-8">
 
     <h3 class="text-center mb-4 text-monospace">Como tem sido a minha experiência na Generation?</h3>
 
@@ -26,7 +26,7 @@
         <div class="form-group m-0">
             <label class="text-monospace" for="tema">Escolha um tema ou <a href="">Cadastre um novo</a></label>
 
-            <select name="tema" id="tema" class="form-control">
+            <select name="tema" id='tema' class="form-control">
                     <option>
                         Teste 123
                     </option>
@@ -45,7 +45,7 @@
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link active text-secondary font-weight-bold" id="nav-home-tab" data-toggle="tab" href="#minhas-postagens" role="tab" aria-controls="nav-home" aria-selected="true">Minhas Postagens</a>
                 
-                <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-profile-tab" data-toggle="tab" href="#postagens-temas" role="tab" aria-controls="nav-profile" aria-selected="false" (click)='limpaListaTema()'>Postagens por tema</a>
+                <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-profile-tab" data-toggle="tab" href="#postagens-temas" role="tab" aria-controls="nav-profile" aria-selected="false">Postagens por tema</a>
 
             </div>    
         </nav>
@@ -59,7 +59,7 @@
 
                     </div>
                     <div class="col-md-2 pl-0">
-                        <button class="btn btn-outline-warning w-100" type="button"Pesquisar></button>
+                        <button class="btn btn-outline-warning w-100" type="button"Pesquisar>Pesquisar</button>
 
                     </div>
                 </div>
@@ -77,12 +77,15 @@
 
                     </div>
                     <div class="col-md-2 pl-0">
-                        <button class="btn btn-outline-warning w-100" type="button"Pesquisar></button>
+                        <button class="btn btn-outline-warning w-100" type="button"Pesquisar>Pesquisar</button>
 
                     </div>
-                </div>             
+                </div>            
             
             </div>           
+            <div class="tab-pane fade" id="postagens-temas" role="tabpanel" aria-labelledby="nav-presenca-tab">
+            </div>
+
 
         </div>
 
