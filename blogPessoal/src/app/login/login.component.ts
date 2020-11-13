@@ -26,8 +26,4 @@ userLogin: UserLogin = new UserLogin()
     })
 
   }
-
-
-
-
 }

@@ -13,24 +13,29 @@ export class PostagemService {
     headers: new HttpHeaders().set('Autorization', localStorage.getItem('token'))
   }
 
-  getAllPostagens(){
+  // End points
+  getAllPostagens() {
     return this.http.get('http://localhost:8080/postagens', this.token)
   }
-
+      // End points            //Parâmetro
   getByIdPostagem(id: number) {
     return this.http.get(`http://localhost:8080/postagens/${id}`, this.token)
   }
-
+   // End points   //(Parâmetro)
   postPostagem(postagem: Postagem) {
     return this.http.post('http://localhost:8080/postagens', postagem, this.token)
   }
-
-  putPostagem(postagem: Postagem){
+  // End points //(Parâmetro)
+  putPostagem(postagem: Postagem) {
     return this.http.put('http://localhost:8080/postagens', postagem, this.token)
   }
+  // End points //(Parâmetro)v
+  deletePostagem(id: number) {
+    return this.http.delete(`http://localhost:8080/postagens/${id}`, this.token)
+  }
 
-deletePostagem(id: number) {
-  return this.http.delete(`http://localhost:8080/postagens/${id}`, this.token)
-
-}
+  // End points          //(Parâmetro)
+  getByTituloPostagem (titulo: string){
+    return this.http.get(`http://localhost:8080/postagens/titulo/${titulo}`, this.token)
+  }
 }
