@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 import { Tema } from '../model/Tema';
 
 @Injectable({
@@ -10,7 +11,7 @@ export class TemaService {
   constructor(private http: HttpClient) { }
 
   token = {
-    headers: new HttpHeaders().set('Autorization', localStorage.getItem('token'))
+    headers: new HttpHeaders().set('Autorization', environment.token)
   }
 
   getAllTemas(){
